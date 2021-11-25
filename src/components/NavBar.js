@@ -10,9 +10,9 @@ const NavBar = (props) => {
     }
     return (
         <nav className="navbar navbar-expand-sm navbar-light bg-light">
-            <NavLink class="navbar-brand mb-0 h1" to="/">Would You Rather</NavLink>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
+            <NavLink className="navbar-brand mb-0 h1" to="/">Would You Rather</NavLink>
+            <div className="collapse navbar-collapse">
+                <ul className="navbar-nav mr-auto">
                     <li>
                         <NavLink to='/' exact activeClassName='active'>
                             Questions
@@ -29,8 +29,8 @@ const NavBar = (props) => {
                         </NavLink>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-sm-0">
-                    <label class="form-label mr-sm-2">
+                <form className="form-inline my-2 my-sm-0">
+                    <label className="form-label mr-sm-2">
                         Welcome {props.username}!
                     </label>
                     <button onClick={logout} class ="btn btn-outline-warning my-2 my-sm-0" type ="submit">logout</button>

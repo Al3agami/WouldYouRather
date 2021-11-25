@@ -172,9 +172,7 @@ export function _saveQuestion(question) {
 }
 
 export function _saveQuestionAnswer({ authedUser, qid, answer }) {
-    console.log('authedUser: ', '-' + authedUser + '-');
     return new Promise((res, rej) => {
-        console.log('authedUser: ', authedUser);
         setTimeout(() => {
             debugger;
             users = {

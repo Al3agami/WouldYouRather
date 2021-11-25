@@ -24,13 +24,13 @@ const UserCard = (props) => {
                     <div className='user-score'>
                         <ul className='py-0 my-0'>
                             <li className='my-0 py-0'>
-                                <button class="btn-sm btn-primary">
-                                    Asked <span class="badge badge-light">{props.user.questions.length}</span>
+                                <button className="btn-sm btn-primary">
+                                    Asked <span className="badge badge-light">{props.user.questions.length}</span>
                                 </button>
                             </li>
                             <li className='my-0 py-1'>
-                                <button class="btn-sm btn-primary">
-                                    Answered <span class="badge badge-light">{Object.keys(props.user.answers).length}</span>
+                                <button className="btn-sm btn-primary">
+                                    Answered <span className="badge badge-light">{Object.keys(props.user.answers).length}</span>
                                 </button>
                             </li>
                         </ul>
@@ -43,7 +43,6 @@ const UserCard = (props) => {
 
 export default withRouter(connect(
     ({ users, authedUser}, {uId}) => {
-        console.log(users[uId]);
         return {
             user: users[uId],
             authedUser

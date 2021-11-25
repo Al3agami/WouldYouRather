@@ -49,7 +49,7 @@ class CreateQuestion extends Component{
                             placeholder="Coffee"
                             />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label htmlFor="optionTwo">Option Two</label>
                         <input
                             onChange={this.textChange}

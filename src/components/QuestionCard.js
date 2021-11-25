@@ -57,7 +57,7 @@ class QuestionCard extends Component {
                                     }
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div className="form-check">
                                 {this.state.optionTwo && 
                                     <input
                                         className="form-check-input"

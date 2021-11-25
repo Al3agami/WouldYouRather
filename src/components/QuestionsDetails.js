@@ -36,7 +36,6 @@ class QuestionDetails extends Component {
         // this.props.history.push('/');
     }
     render() {
-        console.log('msg', this.props.msg);
         if (this.props.msg != null) 
         { 
             this.props.history.push(`/error/${this.props.msg}`);
@@ -68,7 +67,7 @@ class QuestionDetails extends Component {
                             }
                             </label>
                         </div>
-                        <div class="form-check my-1">
+                        <div className="form-check my-1">
                             <input
                                 onChange={this.optionSelected}
                                 className="form-check-input my-2"
